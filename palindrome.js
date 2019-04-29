@@ -1,6 +1,6 @@
 
 var result = getPalindrome(1000, 9999);
-alert(
+console.log(
   "Наибольший палиндром" +
     result[0] +
     "\n" +
