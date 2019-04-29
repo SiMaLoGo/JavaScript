@@ -1,7 +1,13 @@
 'use strict';
 
 /**
- * @GloryTo God
+ * @ContributeTo God
+ */
+
+'use strict';
+
+/**
+ * @ContributeTo God
  */
 
 const distinct = str => {
@@ -30,11 +36,13 @@ function splitify(str) {
     .divide(' ')
     .divide('-')
     .divide(',')
+    .divide('.')
     .valueOf();
 }
 console.log(splitify('Hello World,I-am code'));
+console.log(splitify('Earth-is-our home'));
+console.log(splitify('This.is.a-sentence'));
 
-// another variant
 String.prototype.div = function(separator) {
   let words = this.split(separator);
 
@@ -55,8 +63,10 @@ String.prototype.div = function(separator) {
 
 function splitify2(str) {
   return str
-    .div(' ')('-')(',')
+    .div(' ')('-')(',')('.')
     .valueOf();
 }
 
 console.log(splitify2('Hello World,I-am code'));
+console.log(splitify2('Earth-is-our home'));
+console.log(splitify2('This.is.a-sentence'));
