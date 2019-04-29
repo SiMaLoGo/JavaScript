@@ -1,13 +1,7 @@
 'use strict';
 
 /**
- * @ContributeTo God
- */
-
-'use strict';
-
-/**
- * @ContributeTo God
+ * @GloryTo God
  */
 
 const distinct = str => {
