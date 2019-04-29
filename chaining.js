@@ -3,7 +3,7 @@
 /**
  * @GloryTo God
  */
-
+// variant 1
 const distinct = str => {
   let words = [].concat(str);
 
@@ -37,6 +37,7 @@ console.log(splitify('Hello World,I-am code'));
 console.log(splitify('Earth-is-our home'));
 console.log(splitify('This.is.a-sentence'));
 
+// variant 2
 String.prototype.div = function(separator) {
   let words = this.split(separator);
 
